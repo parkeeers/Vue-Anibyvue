@@ -7,7 +7,7 @@
 
 ## 安装方式
 
-    npm i Anibyvue
+    npm i anibyvue
 
 ## 简要说明
 * 每个动画模块的实现依托Vue过渡效果中不同的类名切换
