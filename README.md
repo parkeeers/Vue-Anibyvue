@@ -40,7 +40,7 @@ export default {
 3.组件使用
 ``` xml
 <anibyVue :show="show" animation="rotate" @hide="show = false">
-    <div>A vue modal with animations.</div>
+    <div>A vue modal with animations</div>
 </anibyVue>
 ```
 
