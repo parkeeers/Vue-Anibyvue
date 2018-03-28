@@ -1,0 +1,46 @@
+/* -- door -- */
+@-webkit-keyframes anibyvue-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+@keyframes anibyvue-door-enter {
+    from {
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+    }
+}
+
+.anibyvue-door-enter-active {
+    -webkit-animation: anibyvue-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: anibyvue-door-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes anibyvue-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+@keyframes anibyvue-door-leave {
+    60% {
+        -webkit-transform: scale3d(.01, 1, 1);
+        transform: scale3d(.01, 1, 1);
+    }
+    to {
+        -webkit-transform: scale3d(0, 1, .1);
+        transform: scale3d(0, 1, .1);
+    }
+}
+
+.anibyvue-door-leave-active {
+    -webkit-animation: anibyvue-door-leave both;
+    animation: anibyvue-door-leave both;
+}

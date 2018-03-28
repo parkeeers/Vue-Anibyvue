@@ -1,0 +1,38 @@
+/* -- slideUp -- */
+@-webkit-keyframes anibyvue-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes anibyvue-slideUp-enter {
+    from {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.anibyvue-slideUp-enter-active {
+    -webkit-animation: anibyvue-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: anibyvue-slideUp-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes anibyvue-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+@keyframes anibyvue-slideUp-leave {
+    to {
+        -webkit-transform: translate3d(0, 100px, 0);
+        transform: translate3d(0, 100px, 0);
+    }
+}
+
+.anibyvue-slideUp-leave-active {
+    -webkit-animation: anibyvue-slideUp-leave both;
+    animation: anibyvue-slideUp-leave both;
+}

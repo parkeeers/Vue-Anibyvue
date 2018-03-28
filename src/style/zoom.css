@@ -1,0 +1,38 @@
+/* -- zoom -- */
+@-webkit-keyframes anibyvue-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes anibyvue-zoom-enter {
+    from {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.anibyvue-zoom-enter-active {
+    -webkit-animation: anibyvue-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: anibyvue-zoom-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes anibyvue-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes anibyvue-zoom-leave {
+    to {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.anibyvue-zoom-leave-active {
+    -webkit-animation: anibyvue-zoom-leave both;
+    animation: anibyvue-zoom-leave both;
+}

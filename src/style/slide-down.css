@@ -1,0 +1,38 @@
+/* -- slideDown -- */
+@-webkit-keyframes anibyvue-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes anibyvue-slideDown-enter {
+    from {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.anibyvue-slideDown-enter-active {
+    -webkit-animation: anibyvue-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+    animation: anibyvue-slideDown-enter both cubic-bezier(0.4, 0, 0, 1.5);
+}
+
+@-webkit-keyframes anibyvue-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+@keyframes anibyvue-slideDown-leave {
+    to {
+        -webkit-transform: translate3d(0, -100px, 0);
+        transform: translate3d(0, -100px, 0);
+    }
+}
+
+.anibyvue-slideDown-leave-active {
+    -webkit-animation: anibyvue-slideDown-leave both;
+    animation: anibyvue-slideDown-leave both;
+}

@@ -1,0 +1,107 @@
+/* -- common -- */
+.anibyvue,
+.anibyvue-mask {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.anibyvue {
+    position: fixed;
+}
+
+.anibyvue-mask {
+    position: absolute;
+    background: rgba(0, 0, 0, .3);
+}
+
+.anibyvue-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 101;
+    padding: 15px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.anibyvue-close {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    z-index: 9999;
+}
+
+.anibyvue-close:before,
+.anibyvue-close:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #999;
+    border-radius: 100%;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.anibyvue-close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.anibyvue-close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.anibyvue-close:hover:before,
+.anibyvue-close:hover:after {
+    background: #333;
+}
+
+/* -- fade -- */
+@-webkit-keyframes anibyvue-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes anibyvue-fade-enter {
+    from {
+        opacity: 0;
+    }
+}
+
+.anibyvue-fade-enter-active {
+    -webkit-animation: anibyvue-fade-enter both ease-in;
+    animation: anibyvue-fade-enter both ease-in;
+}
+
+@-webkit-keyframes anibyvue-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes anibyvue-fade-leave {
+    to {
+        opacity: 0
+    }
+}
+
+.anibyvue-fade-leave-active {
+    -webkit-animation: anibyvue-fade-leave both ease-out;
+    animation: anibyvue-fade-leave both ease-out;
+}
